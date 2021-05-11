@@ -6,19 +6,20 @@ import (
 	"os"
 
 	"norm/padding"
+	"norm/timeshift"
 
 	"github.com/gocarina/gocsv"
 )
 
 type timeData struct {
-	Timestamp     string          `csv:"Timestamp"`
-	Address       string          `csv:"Address"`
-	Zipcode       padding.ZipCode `csv:"ZIP"`
-	FullName      string          `csv:"FullName"`
-	FooDuration   string          `csv:"FooDuration"`
-	BarDuration   string          `csv:"BarDuration"`
-	TotalDuration string          `csv:"TotalDuration"`
-	Notes         string          `csv:"Notes"`
+	Timestamp     timeshift.DateTime `csv:"Timestamp"`
+	Address       string             `csv:"Address"`
+	Zipcode       padding.ZipCode    `csv:"ZIP"`
+	FullName      string             `csv:"FullName"`
+	FooDuration   string             `csv:"FooDuration"`
+	BarDuration   string             `csv:"BarDuration"`
+	TotalDuration string             `csv:"TotalDuration"`
+	Notes         string             `csv:"Notes"`
 }
 
 func main() {

@@ -1,2 +1,4 @@
 github.com/gocarina/gocsv v0.0.0-20210408192840-02d7211d929d h1:r3mStZSyjKhEcgbJ5xtv7kT5PZw/tDiFBTMgQx2qsXE=
 github.com/gocarina/gocsv v0.0.0-20210408192840-02d7211d929d/go.mod h1:5YoVOkjYAQumqlV356Hj3xeYh4BdZuLE0/nRkf2NKkI=
+github.com/tkuchiki/go-timezone v0.2.2 h1:MdHR65KwgVTwWFQrota4SKzc4L5EfuH5SdZZGtk/P2Q=
+github.com/tkuchiki/go-timezone v0.2.2/go.mod h1:oFweWxYl35C/s7HMVZXiA19Jr9Y0qJHMaG/J2TES4LY=
