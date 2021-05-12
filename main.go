@@ -5,6 +5,7 @@ import (
 	"io"
 	"os"
 
+	"norm/capper"
 	"norm/padding"
 	"norm/timeshift"
 
@@ -15,7 +16,7 @@ type timeData struct {
 	Timestamp     timeshift.DateTime `csv:"Timestamp"`
 	Address       string             `csv:"Address"`
 	Zipcode       padding.ZipCode    `csv:"ZIP"`
-	FullName      string             `csv:"FullName"`
+	FullName      capper.Uppercase   `csv:"FullName"`
 	FooDuration   string             `csv:"FooDuration"`
 	BarDuration   string             `csv:"BarDuration"`
 	TotalDuration string             `csv:"TotalDuration"`
