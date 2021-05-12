@@ -8,19 +8,20 @@ import (
 	"norm/capper"
 	"norm/padding"
 	"norm/timeshift"
+	"norm/validator"
 
 	"github.com/gocarina/gocsv"
 )
 
 type timeData struct {
 	Timestamp     timeshift.DateTime `csv:"Timestamp"`
-	Address       string             `csv:"Address"`
+	Address       validator.Address  `csv:"Address"`
 	Zipcode       padding.ZipCode    `csv:"ZIP"`
 	FullName      capper.Uppercase   `csv:"FullName"`
 	FooDuration   string             `csv:"FooDuration"`
 	BarDuration   string             `csv:"BarDuration"`
 	TotalDuration string             `csv:"TotalDuration"`
-	Notes         string             `csv:"Notes"`
+	Notes         validator.Notes    `csv:"Notes"`
 }
 
 func main() {

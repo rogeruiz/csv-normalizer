@@ -7,6 +7,7 @@ require (
 	norm/capper v0.0.0-00010101000000-000000000000
 	norm/padding v0.0.0-00010101000000-000000000000
 	norm/timeshift v0.0.0-00010101000000-000000000000
+	norm/validator v0.0.0-00010101000000-000000000000
 )
 
 replace norm/padding => ./padding
@@ -14,3 +15,5 @@ replace norm/padding => ./padding
 replace norm/timeshift => ./timeshift
 
 replace norm/capper => ./capper
+
+replace norm/validator => ./validator
